@@ -1,21 +1,26 @@
 # Void
 
-A starter boilerplate app template for [Meteor](http://meteor.com) using [IronRouter](https://github.com/EventedMind/iron-router).
+A starter boilerplate app template for [Meteor](http://meteor.com) using the following packages: 
+[IronRouter](https://github.com/EventedMind/iron-router)
+[font-awesome](https://atmospherejs.com/natestrauser/font-awesome)
+[collection2](https://atmospherejs.com/aldeed/collection2)
+[autoform](https://atmospherejs.com/aldeed/autoform)
+[bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
+[spin](https://atmospherejs.com/sacha/spin)
 
 Void is based on [Telescope](http://telesc.pe) (an open-source social news app) and is bought to you by the [Discover Meteor](https://www.discovermeteor.com) team. 
 
 ## Installation
 
-If you already have Meteor and [Meteorite](https://github.com/oortcloud/meteorite/), Void is ready to go. Just clone it locally, run it with `mrt`, and start coding!
+If you already have Meteor, Void is ready to go. Just clone it locally, run it with `meteor`, and start coding!
 
 If not, here are the full instructions:
 
 ```
 curl https://install.meteor.com | /bin/sh
-npm install -g meteorite
-git clone https://github.com/SachaG/Void.git myApp
+git clone https://github.com/anuragphadke19/Void.git myApp
 cd myApp
-mrt
+meteor
 ```
 
 ## Features
