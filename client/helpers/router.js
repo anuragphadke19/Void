@@ -31,6 +31,7 @@ var filters = {
 
 }
 
+Router.onBeforeAction('loading');
 Router.onBeforeAction(filters.myFilter, {only: ['items']});
 
 // Routes
@@ -80,3 +81,5 @@ Router.map(function() {
   this.route('forgot');
 
 });
+
+
