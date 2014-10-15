@@ -1,17 +1,15 @@
-# Void
+# A heavily modified fork of [Void](https://github.com/SachaG/Void)
 
 A starter boilerplate app template for [Meteor](http://meteor.com) using the following packages: 
-- [IronRouter](https://github.com/EventedMind/iron-router)
-- [font-awesome](https://atmospherejs.com/natestrauser/font-awesome)
-- [collection2](https://atmospherejs.com/aldeed/collection2)
-- [autoform](https://atmospherejs.com/aldeed/autoform)
-- [bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
-- [spin](https://atmospherejs.com/sacha/spin)
-- [accounts-base](https://atmospherejs.com/meteor/accounts-base)
-- [accounts-password](https://atmospherejs.com/meteor/accounts-password)
-- [accounts-ui](https://atmospherejs.com/meteor/accounts-ui)
-
-Void is based on [Telescope](http://telesc.pe) (an open-source social news app) and is bought to you by the [Discover Meteor](https://www.discovermeteor.com) team. 
+- Client side routing [IronRouter](https://github.com/EventedMind/iron-router)
+- CDN based fontawesome support [font-awesome](https://atmospherejs.com/natestrauser/font-awesome)
+- Excellent collection package[collection2](https://atmospherejs.com/aldeed/collection2)
+- Forms with schema support via "simple-schema" [autoform](https://atmospherejs.com/aldeed/autoform)
+- Bootstrap 3 support [bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
+- Wrapper for spinner.js [spin](https://atmospherejs.com/sacha/spin)
+- Base accounts package [accounts-base](https://atmospherejs.com/meteor/accounts-base)
+- Password based authentication [accounts-password](https://atmospherejs.com/meteor/accounts-password)
+- Dropdown based Ui for authentication (TODO: change to bootstrap based UI) [accounts-ui](https://atmospherejs.com/meteor/accounts-ui)
 
 ## Installation
 
@@ -21,7 +19,7 @@ If not, here are the full instructions:
 
 ```
 curl https://install.meteor.com | /bin/sh
-git clone https://github.com/anuragphadke19/Void.git myApp
+git clone https://github.com/anuragphadke19/firestarter.git myApp
 cd myApp
 meteor or meteor --port $IP:$PORT (if you are using c9.io)
 
@@ -38,9 +36,7 @@ meteor or meteor --port $IP:$PORT (if you are using c9.io)
 
 ## Principles
 
-Void adopts a modular approach, where code is broken down in different files rather than all kept in one place. It also uses the “template/mapper” pattern, where the `item.html` template has a similarly named `item.js` JavaScript file that holds its helper code.
-
-Void uses the `Items` collection as an example, but you would probably replace this with your own collection name (`Posts`, `Sales`, `Projects`, etc.) and change the file and variables names accordingly. 
+Opinionated structure and patterns a la rails
 
 ## File Structure
 
@@ -64,21 +60,15 @@ Void uses the `Items` collection as an example, but you would probably replace t
 			- homepage.html
 	- main.html
 	- main.js
-- **collections**
+- **models**
 	- items.js
 - **lib**
 	- helpers.js
 	- permissions.js
 - **packages**
-	- iron-router
 	- sample-package
 - **public**
 - **server**
 	- fixtures.js
 	- publications.js
 
-## Other Boilerplates
-
-- [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) by matteodem
-- [meteor-jw-opinionated-skeleton](https://github.com/jamesdwilson/meteor-jw-opinionated-skeleton) by jamesdwilson (CoffeeScript)
-- [meteor-boilerplate](https://github.com/BeDifferential/meteor-boilerplate) by BeDifferential (CoffeeScript)
