@@ -7,6 +7,9 @@ A starter boilerplate app template for [Meteor](http://meteor.com) using the fol
 - [autoform](https://atmospherejs.com/aldeed/autoform)
 - [bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
 - [spin](https://atmospherejs.com/sacha/spin)
+- [accounts-base](https://atmospherejs.com/meteor/accounts-base)
+- [accounts-password](https://atmospherejs.com/meteor/accounts-password)
+- [accounts-ui](https://atmospherejs.com/meteor/accounts-ui)
 
 Void is based on [Telescope](http://telesc.pe) (an open-source social news app) and is bought to you by the [Discover Meteor](https://www.discovermeteor.com) team. 
 
@@ -20,7 +23,8 @@ If not, here are the full instructions:
 curl https://install.meteor.com | /bin/sh
 git clone https://github.com/anuragphadke19/Void.git myApp
 cd myApp
-meteor
+meteor or meteor --port $IP:$PORT (if you are using c9.io)
+
 ```
 
 ## Features
@@ -29,6 +33,8 @@ meteor
 - Publications/subscriptions
 - Basic permissions
 - Common templates
+- Basic authentication system
+- Fontawesome & Bootstrap 3 support
 
 ## Principles
 
