@@ -1,12 +1,12 @@
 # Void
 
 A starter boilerplate app template for [Meteor](http://meteor.com) using the following packages: 
-[IronRouter](https://github.com/EventedMind/iron-router)
-[font-awesome](https://atmospherejs.com/natestrauser/font-awesome)
-[collection2](https://atmospherejs.com/aldeed/collection2)
-[autoform](https://atmospherejs.com/aldeed/autoform)
-[bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
-[spin](https://atmospherejs.com/sacha/spin)
+- [IronRouter](https://github.com/EventedMind/iron-router)
+- [font-awesome](https://atmospherejs.com/natestrauser/font-awesome)
+- [collection2](https://atmospherejs.com/aldeed/collection2)
+- [autoform](https://atmospherejs.com/aldeed/autoform)
+- [bootstrap-3](https://atmospherejs.com/mizzao/bootstrap-3)
+- [spin](https://atmospherejs.com/sacha/spin)
 
 Void is based on [Telescope](http://telesc.pe) (an open-source social news app) and is bought to you by the [Discover Meteor](https://www.discovermeteor.com) team. 
 
