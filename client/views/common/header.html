@@ -1,7 +1,7 @@
 <template name="header">
-  <div class="header">
+  <header class="header">
     <h1>Firestarter</h1>
-    <ul>
+    <ul class="list-inline">
       <li><a href="{{pathFor 'homepage'}}">Homepage</a></li>
       <li><a href="{{pathFor 'content'}}">Content page</a></li>
       <li><a href="{{pathFor 'items'}}">Items</a></li>
@@ -13,7 +13,7 @@
         <li><a href="{{pathFor 'login'}}">Log In</a></li>   
       {{/if}}
     </ul>
-  </div>
+  </header>
   <hr/>
   <div class="messages">
     {{#each messages}}
