@@ -70,7 +70,7 @@ Router.map(function() {
     path: '/'
   });
 
-  this.route('content');
+  this.route('about');
 
   // Users
 
