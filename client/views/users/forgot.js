@@ -1,5 +1,5 @@
 Template.forgot.events = {
-  'click input[type=submit]': function(e){
+  'click button[type=submit]': function(e){
     e.preventDefault();
 
     var options = {
@@ -8,10 +8,10 @@ Template.forgot.events = {
 
     Accounts.forgotPassword(options, function(error){
       if(error){
-        flash(error.reason, "error");
+        FlashMessages.sendError(error.reason);
       }else{
         Router.go('/login');
-        flash("Password reset link sent!");
+        FlashMessages.sendSuccess("Password reset link sent!");
       }
     });
 

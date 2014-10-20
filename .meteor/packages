@@ -13,3 +13,5 @@ sacha:spin
 accounts-base
 accounts-password
 accounts-ui
+flash-messages
+

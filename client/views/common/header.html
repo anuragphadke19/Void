@@ -1,23 +1,20 @@
 <template name="header">
   <header class="header">
     <h1>Firestarter</h1>
-    <ul class="list-inline">
-      <li><a href="{{pathFor 'homepage'}}">Homepage</a></li>
-      <li><a href="{{pathFor 'about'}}">About Us</a></li>
-      <li><a href="{{pathFor 'items'}}">Items</a></li>
-      <li><a href="/404">404 Link</a></li>
-      {{#if isLoggedIn}}
-        <li><a href="/" class="log-out">Log Out</a></li>
-      {{else}} 
-        <li><a href="{{pathFor 'signup'}}">Sign Up</a></li>
-        <li><a href="{{pathFor 'login'}}">Log In</a></li>   
-      {{/if}}
-    </ul>
+    <div class="row">
+      <ul class="list-inline col-md-4 text-left">
+        <li><a href="{{pathFor 'homepage'}}">Homepage</a></li>
+        <li><a href="{{pathFor 'about'}}">About</a></li>
+      </ul>
+      <ul class="list-inline col-md-4 col-md-offset-4 text-right">
+        <li><a href="{{pathFor 'items'}}">Items</a></li>
+        {{#if isLoggedIn}}
+          <li><a href="/" class="log-out">Log Out</a></li>
+        {{else}} 
+          <li><a href="{{pathFor 'signup'}}">Sign Up</a>/<a href="{{pathFor 'login'}}">Log In</a></li>
+        {{/if}}
+      </ul>
+    </div>
   </header>
-  <hr/>
-  <div class="messages">
-    {{#each messages}}
-      <p class="message message-{{type}}">{{message}}</p>
-    {{/each}}
-  </div>
+  {{> flashMessages}}
 </template>

@@ -5,6 +5,7 @@ body {
 header{
     padding-left: 10px;
     padding-right: 10px;
+    border-bottom: 1px solid #eee;
 }
 .main{
     padding-left: 10px;
