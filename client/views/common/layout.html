@@ -1,7 +1,9 @@
 <template name="layout">
-  {{> header}}
-  <div class="main">
-    {{> yield}}
+  <div id="wrap">
+	  <div class="container">
+	  	{{> header}}
+	  	{{> yield}}
+	  </div>
   </div>
   {{> footer}}
 </template>
