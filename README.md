@@ -9,8 +9,8 @@ A starter boilerplate app template for [Meteor](http://meteor.com) using the fol
 - Wrapper for spinner.js [spin](https://atmospherejs.com/sacha/spin)
 - Base accounts package [accounts-base](https://atmospherejs.com/meteor/accounts-base)
 - Password based authentication [accounts-password](https://atmospherejs.com/meteor/accounts-password)
-- Dropdown based Ui for authentication (TODO: change to bootstrap based UI) [accounts-ui](https://atmospherejs.com/meteor/accounts-ui)
-- Rails style flash messages for your meteor app (added as a local package) [flash-messages](https://github.com/camilosw/flash-messages)
+- Bootstrap based UI 
+- Rails style flash messages for your meteor app from atmospherejs [mrt:flash-messages](https://atmospherejs.com/mrt/flash-messages)
 
 ## Installation
 
@@ -25,7 +25,6 @@ cd myApp
 git remote -v
 git remote rm origin
 git remote add origin (github or bitbucket repository URL)
-meteor add flash-messages
 meteor or meteor --port $IP:$PORT (if you are using c9.io)
 
 ```
